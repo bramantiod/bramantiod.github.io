@@ -1,0 +1,99 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+	
+<body>
+<center>		
+<img class="w3-container">
+	<img src="css/Naruto-Logo.jpg" width="100%" height="45%"></img>
+
+<div class="w3-bar w3-orange">
+ <button class="w3-bar-item w3-button" onclick="openKota('Atas')">Negara</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Bawah')">Biografi Naruto</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Kiri')">Sasuke</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Kanan')">Right</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Putar')">Spin</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Mendekat')">Zoom</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Kegelapan')">Opacity</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Menghilang')">Fading</button>
+ <div class="w3-dropdown-hover">
+	<button class="w3-button">Orang Tua Naruto</button>
+	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+		<button class="w3-bar-item w3-button" onclick="openKota('Minato')">Minato</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Kushina')">Kushina</button>
+	</div>
+ </div>
+ </div>
+<div id="Atas" class="w3-container kota w3-animate-top" style="display:none">
+ <h2>Negara</h2>
+ Konoha
+ <br>
+ <img src="css/konoha.webp" width="300">
+ </div>
+<div id="Bawah" class="w3-container kota w3-animate-bottom" style="display:none">
+ <h2>Uzumaki Naruto</h2>
+ naruto (ナルト) adalah sebuah serial manga karya Masashi Kishimoto yang diadaptasi menjadi serial anime. 
+ Manga Naruto bercerita seputar kehidupan tokoh utamanya, Naruto Uzumaki, seorang ninja yang hiperaktif, periang, dan ambisius yang ingin mewujudkan keinginannya untuk mendapatkan gelar Hokage, pemimpin dan ninja terkuat di desanya. 
+ Serial ini didasarkan pada komik one-shot oleh Kishimoto yang diterbitkan dalam edisi Akamaru Jump pada Agustus 1997.[1]
+ <br>
+ <img src="css/naruto-uzumaki-qabz_3vhp.png" width="300">
+ </div>
+<div id="Kiri" class="w3-container kota w3-animate-left" style="display:none">
+ <h2>ANIMASI KIRI</h2>
+ Sasuke
+ <br>
+ <img src="css/Sasuke.png">
+</div>
+<div id="Kanan" class="w3-container kota w3-animate-right" style="display:none">
+ <h2>ANIMASI KANAN</h2>
+ Sakura
+ <br>
+ <img src="css/Sakura_Haruno.webp" width="300">
+</div>
+<div id="Mendekat" class="w3-container kota w3-animate-zoom" style="display:none">
+ <h2>ANIMASI ZOOM</h2>
+ Sarada
+ <br>
+ <img src="css/SaradaUchiha.webp" width="300">
+</div>
+<div id="Putar" class="w3-container kota w3-spin" style="display:none">
+ <h2>ANIMASI PUTAR</h2>
+ Boruto
+ <br>
+ <img src="css/boruto-teaser.jpg" width="300">
+</div>
+<div id="Kegelapan" class="w3-container kota w3-animate-opacity" style="display:none">
+ <h2>ANIMASI</h2>
+ Hinata
+ <br>
+ <img src="css/hinata.png" width="300">
+</div>
+<div id="Menghilang" class="w3-container kota w3-animate-fading" style="display:none">
+ <h2>ANIMASI PUDAR</h2>
+ Teman teman Naruto
+ <br>
+ <img src="css/naruto tm.jpg.crdownload" width="300">
+</div>
+<div id="Minato" class="w3-container kota w3-animate-fading" style="display:none">
+<h2>Minato Namikaze</h2>
+<br>
+<img src="css/Minato_Namikaze.webp.crdownload" width="300">
+</div>
+<div id="Kushina" class="w3-container kota w3-animate-fading" style="display:none">
+<h2>Uzumaki Kushina</h2>
+<br>
+<img src="css/kushina.jpg.crdownload" width="300">
+</div>
+<script>
+function openKota(namakota) {
+ var i; 
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html
